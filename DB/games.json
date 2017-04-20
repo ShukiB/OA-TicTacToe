@@ -1,0 +1,1 @@
+{"allGames":[{"winner":{"name":"Shuki","marker":"X"},"players":[{"name":"Shuki","marker":"X"},{"name":"Elad","marker":"O"}],"moves":[{"mark":"X","location":[0,2]},{"mark":"O","location":[2,0]},{"mark":"X","location":[2,2]},{"mark":"O","location":[1,2]},{"mark":"X","location":[0,0]},{"mark":"O","location":[0,1]},{"mark":"X","location":[1,1]}],"id":1}]}

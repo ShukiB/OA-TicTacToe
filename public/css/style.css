@@ -1,0 +1,75 @@
+*{
+  font-family: "Courier"
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.gameView {
+  width:300px;
+  margin: auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  display: inline;
+  border:2px solid gray;
+  border-radius: 4px;
+  font-size: 90px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 2px 2px gray;
+}
+.cell:hover {
+  background-color: lightgray;
+}
+
+.right { float: right; }
+.left { float: left; }
+
+.glyphicon-hover {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.modal-header {
+    color: gray;
+    font-weight: bold;
+}
+
+input.player-name {
+    width: 200px;
+}
+
+.game-player-text {
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    color: #3F51B5;
+}
+
+div.options .btn {
+    margin: 10px 0 10px 0;
+    font-size: 22px;
+    line-height: 2em;
+}
+
+.back-button {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+table {
+    font-size: 16px;
+}
+
+th {
+    text-align: center;
+    font-size: 18px;
+}

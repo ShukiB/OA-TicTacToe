@@ -1,0 +1,26 @@
+ <form name="playerNamesForm" novalidate>
+    <div class="modal-header">
+        <div class="left">
+            <span class="glyphicon glyphicon-pencil"></span>
+            <span class="modal-title" id="modal-title">Insert Names</span>
+        </div>
+        <div class="right">
+            <span class="glyphicon glyphicon-remove-circle glyphicon-hover" ng-click="cancel()"></span>
+        </div>
+    </div>
+    <div class="modal-body" id="modal-body">
+        <div class="form-group" ng-class="{ 'has-error' : playerNamesForm.X.$invalid && playerNamesForm.X.$dirty }">
+            <label>Player X:</label>
+            <input type="text" class="form-control" name="X" ng-model="players.X" required>
+            <p class="help-block text-danger" ng-show="playerNamesForm.X.$invalid && playerNamesForm.X.$dirty">Name Required</p>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error' : playerNamesForm.O.$invalid && playerNamesForm.O.$dirty }">
+            <label>Player O:</label>
+            <input type="text" class="form-control" name="O" ng-model="players.O" required ng-pattern="emailReg">
+            <p class="help-block text-danger" ng-show="playerNamesForm.O.$invalid && playerNamesForm.O.$dirty">Name Required</p>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button ng-disabled="playerNamesForm.$invalid" class="btn btn-danger btn-md" type="button" ng-click="confirm()">Save</button>
+    </div>
+</form>

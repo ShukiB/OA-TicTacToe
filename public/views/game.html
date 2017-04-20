@@ -1,0 +1,21 @@
+<div class="row">
+    <div ng-if="game.players.length" class="gameView">
+        <div ng-if="!game.end">
+            <div class="game-player-text" `>
+                <span>Current Player: </span><span>{{game.currentPlayer.name}}</span>
+            </div>
+            <div class="game-player-text">
+                <span>Marker: </span><span>{{game.currentPlayer.marker}}</span>
+            </div>
+        </div>
+        <hr class="gameView">
+        <div ng-repeat="row in game.board" class="gameView row">
+            <div ng-repeat="col in row">
+                <span class="cell col-xs-4" ng-click="selectCell(col)">{{col.value || ''}}</span>
+            </div>
+        </div>
+    </div>
+    <div ng-if="!game.players.length || game.end">
+        <div ng-include="'/views/options.html'"></div>
+    </div>
+</div>

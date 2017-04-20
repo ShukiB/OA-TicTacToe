@@ -1,0 +1,16 @@
+<div class="modal-header">
+    <div class="left">
+        <span class="glyphicon glyphicon-queen"></span>
+        <span class="modal-title" id="modal-title">Game Over!!!</span>
+    </div>
+    <div class="right">
+        <span class="glyphicon glyphicon-remove-circle glyphicon-hover" ng-click="cancel()"></span>
+    </div>
+</div>
+<div class="modal-body game-player-text" id="modal-body">
+    <span ng-if="!winner">It's a draw!</span>
+    <span ng-if="winner">The winner is: {{winner.name}} ({{winner.marker}})</span>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-danger btn-md" type="button" ng-click="confirm()">Close</button>
+</div>
